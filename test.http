@@ -1,0 +1,36 @@
+GET localhost:8080/product
+
+###
+
+POST localhost:8080/product
+Content-Type: application/json
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product"
+}
+
+###
+
+GET localhost:8080/product/3
+
+###
+PUT localhost:8080/product/1
+Content-Type: application/json
+
+{
+
+  "active": 0,
+  "name": "renamed product",
+  "stock": 100,
+  "sku": 1,
+  "price": 20,
+  "description": "this product was renamed"
+}
+
+###
+
