@@ -1,0 +1,18 @@
+package ch.csbe.productstore.categories;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/category")
+public class CategoriesController {
+    @Autowired
+    private ch.csbe.productstore.categories.CategoriesService categoriesService;
+    @GetMapping
+    public String sayHelloWorld(){
+        return categoriesService.sayHelloWorld();
+    }
+
+
+}
