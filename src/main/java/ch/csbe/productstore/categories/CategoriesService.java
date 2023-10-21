@@ -1,6 +1,7 @@
 package ch.csbe.productstore.categories;
 
 import ch.csbe.productstore.products.Products;
+import ch.csbe.productstore.products.ProductsDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,12 +12,13 @@ public class CategoriesService {
     @Autowired
     private CategoriesRepository categoriesRepository;
 
-    public List<Categories> getAllCategories(){
-        return categoriesRepository.findAll();
+    public List<CategoriesDto> getAllCategories(){
+        return categoriesRepository.findAll().stream().map(this::toCategoriesDto).toList();
     }
 
-    public Categories getCategorybyId(long id){
-        return categoriesRepository.findById(id).orElse(null);
+    public CategoriesDto getCategorybyId(long id){
+        Categories category = categoriesRepository.findById(id).orElse(null);
+        return toCategoriesDto(category);
     }
 
     public Categories createCategory(Categories category){
@@ -49,5 +51,23 @@ public class CategoriesService {
     public Categories deleteCategory(long id) {
         categoriesRepository.deleteById(id);
         return null;
+    }
+
+    private CategoriesDto toCategoriesDto(Categories category){
+        CategoriesDto categoriesDto = new CategoriesDto();
+        categoriesDto.setId(category.getId());
+        categoriesDto.setActive(category.getActive());
+        categoriesDto.setProducts(category.getProductsRepositories().stream().map(Products -> {
+            ProductsDto productsDto = new ProductsDto();
+            productsDto.setId(Products.getId());
+            productsDto.setStock(Products.getStock());
+            productsDto.setName(Products.getName());
+            productsDto.setPrice(Products.getPrice());
+            productsDto.setDescription(Products.getDescription());
+            productsDto.setImage(Products.getImage());
+            return productsDto;
+        }).toList());
+        categoriesDto.setName(category.getName());
+        return categoriesDto;
     }
 }

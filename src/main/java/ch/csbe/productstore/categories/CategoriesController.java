@@ -11,11 +11,11 @@ public class CategoriesController {
     @Autowired
     private CategoriesService categoriesService;
     @GetMapping()
-    public List<Categories> getAllCategories(){
+    public List<CategoriesDto> getAllCategories(){
         return categoriesService.getAllCategories();
     }
     @GetMapping("/{id}")
-    public Categories getCategoryById(@PathVariable long id){
+    public CategoriesDto getCategoryById(@PathVariable long id){
         return categoriesService.getCategorybyId(id);
     }
 

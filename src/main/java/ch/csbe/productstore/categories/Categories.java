@@ -1,6 +1,7 @@
 package ch.csbe.productstore.categories;
 
 import ch.csbe.productstore.products.Products;
+import ch.csbe.productstore.products.ProductsDto;
 import jakarta.persistence.*;
 
 import java.util.List;
