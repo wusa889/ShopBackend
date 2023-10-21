@@ -1,3 +1,124 @@
+GET http://localhost:8080/category
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T111830.200.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test2"
+
+}
+
+<> 2023-10-21T111828.200.json
+
+###
+
+GET http://localhost:8080/category
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T111802.200.json
+
+###
+
+GET http://localhost:8080/category/1/products
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T111735.200.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 146
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product 2 posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product"
+}
+
+<> 2023-10-21T111731.200.txt
+
+###
+
+GET http://localhost:8080/category/1/products
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T111720.200.json
+
+###
+
+GET http://localhost:8080/product
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T111717.200.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 144
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product"
+}
+
+<> 2023-10-21T111716.200.txt
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T111712.200.json
+
+###
+
 GET http://localhost:8080/product
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
@@ -671,128 +792,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2023-10-21T083008.200.json
-
-###
-
-DELETE http://localhost:8080/user/1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-GET http://localhost:8080/user
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T082939.200.json
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-Content-Length: 74
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "TestUser",
-  "password": "123456789",
-  "powerlevel": 1
-}
-
-<> 2023-10-21T082936.200.json
-
-###
-
-GET http://localhost:8080/user
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T082932.200.json
-
-###
-
-PUT http://localhost:8080/user/1
-Content-Type: application/json
-Content-Length: 77
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "username": "changedUser",
-  "password": "aqbcdefg",
-  "powerlevel": 5
-}
-
-<> 2023-10-21T082928.200.json
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-Content-Length: 74
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "TestUser",
-  "password": "123456789",
-  "powerlevel": 1
-}
-
-<> 2023-10-21T082922.200.json
-
-###
-
-PUT http://localhost:8080/user/1
-Content-Type: application/json
-Content-Length: 77
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "username": "changedUser",
-  "password": "aqbcdefg",
-  "powerlevel": 5
-}
-
-<> 2023-10-21T082840.405.json
-
-###
-
-GET http://localhost:8080/user
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T082754.200.json
-
-###
-
-PUT http://localhost:8080/user/1
-Content-Type: application/json
-Content-Length: 79
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "username": "changedUser",
-  "password": "aqbcdefg",
-  "powerlevel": 5
-}
-
-<> 2023-10-21T082737.405.json
 
 ###
 

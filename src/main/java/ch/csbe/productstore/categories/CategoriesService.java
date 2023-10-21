@@ -38,10 +38,19 @@ public class CategoriesService {
         }
     }
 
-    public List<Products> getAllProductsFromCategory(long id){
+    public List<ProductsDto> getAllProductsFromCategory(long id){
         Categories category = categoriesRepository.findById(id).orElse(null);
         if (category != null) {
-            return category.getProductsRepositories();
+            return category.getProductsRepositories().stream().map(Products -> {
+                ProductsDto productsDto = new ProductsDto();
+                productsDto.setId(Products.getId());
+                productsDto.setStock(Products.getStock());
+                productsDto.setName(Products.getName());
+                productsDto.setPrice(Products.getPrice());
+                productsDto.setDescription(Products.getDescription());
+                productsDto.setImage(Products.getImage());
+                return productsDto;
+            }).toList();
         }
         else{
             return null;

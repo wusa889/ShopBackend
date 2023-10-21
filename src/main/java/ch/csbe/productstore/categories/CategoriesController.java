@@ -1,5 +1,6 @@
 package ch.csbe.productstore.categories;
 import ch.csbe.productstore.products.Products;
+import ch.csbe.productstore.products.ProductsDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class CategoriesController {
     }
 
     @GetMapping("/{id}/products")
-    public List<Products> getAllProductsFromCategory(@PathVariable long id){
+    public List<ProductsDto> getAllProductsFromCategory(@PathVariable long id){
         return categoriesService.getAllProductsFromCategory(id);
     }
 

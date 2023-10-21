@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
   "active": 1,
-  "name": "test product posted",
+  "name": "test product 2 posted",
   "stock": 10,
   "sku": 55,
   "price": 99999999999,
@@ -92,3 +92,6 @@ Content-Type: application/json
 
 ###
 GET localhost:8080/category/1/products
+
+###
+GET localhost:8080/category
