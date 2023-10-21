@@ -15,20 +15,20 @@ public class ProductsService {
     @Autowired
     private ProductsRepository productsRepository;
 
-    public List<ch.csbe.productstore.products.Products> getAllProducts(){
+    public List<Products> getAllProducts(){
         return productsRepository.findAll();
     }
 
-    public ch.csbe.productstore.products.Products getProductById(long id) {
+    public Products getProductById(long id) {
         return productsRepository.findById(id).orElse(null);
     }
 
-    public ch.csbe.productstore.products.Products createProduct(ch.csbe.productstore.products.Products product){
+    public Products createProduct(Products product){
         return productsRepository.save(product);
     }
 
-    public ch.csbe.productstore.products.Products updateProduct(long id, ch.csbe.productstore.products.Products product){
-        ch.csbe.productstore.products.Products existingProduct = productsRepository.findById(id).orElse(null);
+    public Products updateProduct(long id, Products product){
+        Products existingProduct = productsRepository.findById(id).orElse(null);
         if (existingProduct != null) {
             existingProduct.setDescription(product.getDescription());
             existingProduct.setName(product.getName());
@@ -44,8 +44,9 @@ public class ProductsService {
 
     }
 
-    public void deleteBook(Long id){
+    public Products deleteProduct(Long id){
         productsRepository.deleteById(id);
+        return null;
     }
 
 

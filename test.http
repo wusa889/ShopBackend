@@ -34,3 +34,36 @@ Content-Type: application/json
 
 ###
 
+DELETE localhost:8080/product/1
+
+###
+POST localhost:8080/user
+Content-Type: application/json
+
+{
+  "username": "TestUser",
+  "password": "123456789",
+  "powerlevel": 1
+}
+###
+
+GET localhost:8080/user/1
+
+###
+
+GET localhost:8080/user
+
+###
+
+PUT localhost:8080/user/1
+Content-Type: application/json
+
+{
+
+  "username": "changedUser",
+  "password": "aqbcdefg",
+  "powerlevel": 5
+}
+
+###
+DELETE localhost:8080/user/1
