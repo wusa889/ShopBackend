@@ -14,7 +14,7 @@ public class Categories {
     private Long id;
 
     @Column(columnDefinition = "tinyint")
-    private String active;
+    private int active;
 
     @Column(columnDefinition = "varchar(255)")
     private String name;
@@ -22,11 +22,11 @@ public class Categories {
     @OneToMany(mappedBy = "categoriesRepository")
     private List<Products> productsRepository;
 
-    public String getActive() {
+    public int getActive() {
         return active;
     }
 
-    public void setActive(String active) {
+    public void setActive(int active) {
         this.active = active;
     }
 
