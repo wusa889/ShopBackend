@@ -25,13 +25,13 @@ public class CategoriesService {
         return categoriesRepository.save(category);
     }
 
-    public Categories updateCategory(long id, Categories category){
+    public String updateCategory(long id, Categories category){
         Categories existingCategory = categoriesRepository.findById(id).orElse(null);
         if (existingCategory != null){
             existingCategory.setName(category.getName());
             existingCategory.setActive(category.getActive());
-            existingCategory.setProductsRepositories(category.getProductsRepositories());
-            return categoriesRepository.save(existingCategory);
+            categoriesRepository.save(existingCategory);
+            return "{existingCategory.getid()} was modified";
         }
         else{
             return null;

@@ -31,7 +31,7 @@ public class CategoriesController {
     }
 
     @PutMapping("/{id}")
-    public Categories updateCategory(@RequestBody Categories category, @PathVariable long id){
+    public String updateCategory(@RequestBody Categories category, @PathVariable long id){
         return categoriesService.updateCategory(id, category);
     }
 
