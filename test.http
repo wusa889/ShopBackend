@@ -2,7 +2,7 @@ GET localhost:8080/product
 
 ###
 
-POST localhost:8080/product
+POST localhost:8080/product/1
 Content-Type: application/json
 
 {
@@ -67,3 +67,28 @@ Content-Type: application/json
 
 ###
 DELETE localhost:8080/user/1
+
+###
+POST localhost:8080/category
+Content-Type: application/json
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+###
+POST localhost:8080/category
+Content-Type: application/json
+
+{
+
+  "active": 1,
+  "name": "test2"
+
+}
+
+###
+GET localhost:8080/category/1/products

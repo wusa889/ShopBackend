@@ -1,5 +1,7 @@
 package ch.csbe.productstore.products;
 
+import ch.csbe.productstore.categories.Categories;
+import ch.csbe.productstore.categories.CategoriesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,8 @@ public class ProductsService {
 
     @Autowired
     private ProductsRepository productsRepository;
+    @Autowired
+    private CategoriesRepository categoriesRepository;
 
     public List<Products> getAllProducts(){
         return productsRepository.findAll();
@@ -23,8 +27,17 @@ public class ProductsService {
         return productsRepository.findById(id).orElse(null);
     }
 
-    public Products createProduct(Products product){
-        return productsRepository.save(product);
+    public String createProduct(Products product, long id){
+        Categories category = categoriesRepository.findById(id).orElse(null);
+        if (category != null){
+            product.setCategoriesRepository(category);
+            productsRepository.save(product);
+            return "product created";
+        }
+        else{
+            throw new RuntimeException("Kategorie nicht gefunden");
+        }
+
     }
 
     public Products updateProduct(long id, Products product){

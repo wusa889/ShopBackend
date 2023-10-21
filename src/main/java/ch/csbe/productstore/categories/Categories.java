@@ -1,8 +1,10 @@
 package ch.csbe.productstore.categories;
 
+import ch.csbe.productstore.products.Products;
 import jakarta.persistence.*;
 
 import java.util.List;
+
 
 @Entity
 public class Categories {
@@ -17,8 +19,8 @@ public class Categories {
     @Column(columnDefinition = "varchar(255)")
     private String name;
 
-    @OneToMany()
-    private List<ch.csbe.productstore.products.Products> productsRepositories;
+    @OneToMany(mappedBy = "categoriesRepository")
+    private List<Products> productsRepository;
 
     public String getActive() {
         return active;
@@ -36,12 +38,12 @@ public class Categories {
         this.name = name;
     }
 
-    public List<ch.csbe.productstore.products.Products> getProductsRepositories() {
-        return productsRepositories;
+    public List<Products> getProductsRepositories() {
+        return productsRepository;
     }
 
-    public void setProductsRepositories(List<ch.csbe.productstore.products.Products> productsRepositories) {
-        this.productsRepositories = productsRepositories;
+    public void setProductsRepositories(List<Products> products) {
+        this.productsRepository = productsRepository;
     }
 
     public void setId(Long id) {
@@ -51,4 +53,6 @@ public class Categories {
     public Long getId() {
         return id;
     }
+
+
 }

@@ -1,3 +1,510 @@
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 144
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product"
+}
+
+<> 2023-10-21T102319.200.txt
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T102312.200.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 144
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product"
+}
+
+<> 2023-10-21T102200.200.txt
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T102152.200.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 144
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product"
+}
+
+<> 2023-10-21T102126.200.txt
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T102120.200.json
+
+###
+
+GET http://localhost:8080/product
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T101823.200.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T101818.200.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 147
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product",
+
+
+}
+
+<> 2023-10-21T101136.400.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T101126.200.json
+
+###
+
+GET http://localhost:8080/category
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T100334.200.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test2"
+
+}
+
+<> 2023-10-21T100333.200.json
+
+###
+
+GET http://localhost:8080/category
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T100331.200.json
+
+###
+
+GET http://localhost:8080/product
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T100322.200.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 147
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product",
+
+
+}
+
+<> 2023-10-21T100317.400.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 174
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product",
+  "categoriesRepository": 1
+
+}
+
+<> 2023-10-21T100236.400.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 147
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product",
+
+
+}
+
+<> 2023-10-21T100221.400.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T100202.200.json
+
+###
+
+GET http://localhost:8080/category
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T094651.200.json
+
+###
+
+POST http://localhost:8080/product
+Content-Type: application/json
+Content-Length: 178
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product",
+  "categories_repository_id": 1
+
+}
+
+<> 2023-10-21T094643.200.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test2"
+
+}
+
+<> 2023-10-21T094633.200.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T094631.200.json
+
+###
+
+POST http://localhost:8080/product
+Content-Type: application/json
+Content-Length: 178
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product",
+  "categories_repository_id": 1
+
+}
+
+<> 2023-10-21T094557.200.json
+
+###
+
+POST http://localhost:8080/product
+Content-Type: application/json
+Content-Length: 145
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product"
+
+}
+
+<> 2023-10-21T094455.200.json
+
+###
+
+POST http://localhost:8080/product
+Content-Type: application/json
+Content-Length: 146
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product",
+
+}
+
+<> 2023-10-21T094449.400.json
+
+###
+
+POST http://localhost:8080/product
+Content-Type: application/json
+Content-Length: 173
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product",
+  "categoriesRepository": 1
+}
+
+<> 2023-10-21T094432.400.json
+
+###
+
+GET http://localhost:8080/category
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T094425.200.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test2"
+
+}
+
+<> 2023-10-21T094409.200.json
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 40
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T094404.200.json
+
+###
+
 DELETE http://localhost:8080/product/1
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
@@ -268,132 +775,6 @@ GET http://localhost:8080/user/1
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-GET http://localhost:8080/product
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T082324.200.json
-
-###
-
-PUT http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 135
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 0,
-  "name": "renamed product",
-  "stock": 100,
-  "sku": 1,
-  "price": 20,
-  "description": "this product was renamed"
-}
-
-<> 2023-10-21T082320.200.json
-
-###
-
-GET http://localhost:8080/product
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T082312.200.json
-
-###
-
-POST http://localhost:8080/product
-Content-Type: application/json
-Content-Length: 144
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T082310.200.json
-
-###
-
-GET http://localhost:8080/product
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-20T153321.200.json
-
-###
-
-POST http://localhost:8080/product
-Content-Type: application/json
-Content-Length: 144
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-20T153320.200.json
-
-###
-
-GET http://localhost:8080/product
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-20T153318.200.json
-
-###
-
-POST http://localhost:8080/product
-Content-Type: application/json
-Content-Length: 144
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-20T153315.200.json
-
-###
-
-GET http://localhost:8080/product
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-20T153304.200.json
 
 ###
 
