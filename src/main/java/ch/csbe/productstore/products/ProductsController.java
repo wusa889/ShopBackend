@@ -11,11 +11,11 @@ public class ProductsController {
     @Autowired
     private ProductsService productsService;
     @GetMapping()
-    public List<Products> getAllProducts(){
+    public List<ProductsDto> getAllProducts(){
         return productsService.getAllProducts();
     }
     @GetMapping("/{id}")
-    public Products getProductById(@PathVariable int id){
+    public ProductsDto getProductById(@PathVariable int id){
         return productsService.getProductById(id);
     }
 

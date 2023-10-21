@@ -19,12 +19,13 @@ public class ProductsService {
     @Autowired
     private CategoriesRepository categoriesRepository;
 
-    public List<Products> getAllProducts(){
-        return productsRepository.findAll();
+    public List<ProductsDto> getAllProducts(){
+       return productsRepository.findAll().stream().map(this::toProductsDto).toList();
     }
 
-    public Products getProductById(long id) {
-        return productsRepository.findById(id).orElse(null);
+    public ProductsDto getProductById(long id) {
+        Products product = productsRepository.findById(id).orElse(null);
+        return toProductsDto(product);
     }
 
     public String createProduct(Products product, long id){
@@ -60,6 +61,17 @@ public class ProductsService {
     public Products deleteProduct(Long id){
         productsRepository.deleteById(id);
         return null;
+    }
+
+    private ProductsDto toProductsDto(Products products){
+        ProductsDto productsDto = new ProductsDto();
+        productsDto.setId(products.getId());
+        productsDto.setDescription(products.getDescription());
+        productsDto.setImage(products.getImage());
+        productsDto.setName(products.getName());
+        productsDto.setPrice(products.getPrice());
+        productsDto.setStock(products.getStock());
+        return productsDto;
     }
 
 

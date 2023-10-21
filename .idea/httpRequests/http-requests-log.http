@@ -1,3 +1,50 @@
+GET http://localhost:8080/product
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-21T105825.200.json
+
+###
+
+POST http://localhost:8080/product/1
+Content-Type: application/json
+Content-Length: 144
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "test product posted",
+  "stock": 10,
+  "sku": 55,
+  "price": 99999999999,
+  "description": "this is a new product"
+}
+
+<> 2023-10-21T105822.200.txt
+
+###
+
+POST http://localhost:8080/category
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+
+  "active": 1,
+  "name": "test1"
+
+}
+
+<> 2023-10-21T105818.200.json
+
+###
+
 POST http://localhost:8080/product/1
 Content-Type: application/json
 Content-Length: 144
@@ -734,47 +781,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2023-10-21T082712.200.json
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-Content-Length: 74
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "TestUser",
-  "password": "123456789",
-  "powerlevel": 1
-}
-
-<> 2023-10-21T082707.200.json
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-Content-Length: 75
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "TestUser",
-  "password": "123456789",
-  "powerlevel": 1,
-}
-
-<> 2023-10-21T082640.400.json
-
-###
-
-GET http://localhost:8080/user/1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
 
 ###
 
