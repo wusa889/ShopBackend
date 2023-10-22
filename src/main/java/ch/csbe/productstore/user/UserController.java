@@ -20,8 +20,9 @@ public class UserController {
     }
 
     @PostMapping()
-    public User createUser(@RequestBody User user){
-        return userService.createUser(user);
+    public String createUser(@RequestBody UserDto user){
+        userService.createUser(user);
+        return "user Created";
     }
 
     @PutMapping("/{id}")
