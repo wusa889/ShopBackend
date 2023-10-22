@@ -14,8 +14,8 @@ public class User {
     @Column(columnDefinition = "varchar(100)")
     private String password;
 
-    @Column(columnDefinition = "int")
-    private int powerLevel;
+    @Column
+    private boolean admin;
 
     public void setId(Long id) {
         this.id = id;
@@ -41,11 +41,16 @@ public class User {
         this.password = password;
     }
 
-    public int getPowerLevel() {
-        return powerLevel;
+    public boolean getAdmin() {
+        return admin;
     }
 
-    public void setPowerLevel(int powerLevel) {
-        this.powerLevel = powerLevel;
+    public void setAdmin(boolean powerLevel) {
+        this.admin = admin;
+    }
+
+    public boolean isAdmin(){
+        return admin;
     }
 }
+

@@ -28,7 +28,7 @@ public class UserService {
         if (existingUser != null) {
             existingUser.setUsername(user.getUsername());
             existingUser.setPassword(user.getPassword());
-            existingUser.setPowerLevel(user.getPowerLevel());
+            existingUser.setAdmin(user.getAdmin());
             return userRepository.save(existingUser);
         } else {
             return null;
