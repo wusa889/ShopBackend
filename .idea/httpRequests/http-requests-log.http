@@ -1,3 +1,771 @@
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=B0E14A3070B3AE833DCA23AD9BA2FC4D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+<> 2023-10-22T143020.200.txt
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=B0E14A3070B3AE833DCA23AD9BA2FC4D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T143017.200.txt
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=7D0B2D94C343244A5CD444F5A8163134
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=7D0B2D94C343244A5CD444F5A8163134
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T142800.200.txt
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=C032055943BF660E94ED62441C4AD449
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=C032055943BF660E94ED62441C4AD449
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T142725.200.txt
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=20F4D9FDA16E13BF7FF4345CB79FD03F
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=20F4D9FDA16E13BF7FF4345CB79FD03F
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T142627.200.txt
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=F54F3F02AE005D70860F3BC8737FA5E0
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=F54F3F02AE005D70860F3BC8737FA5E0
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T142248.200.txt
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=F54F3F02AE005D70860F3BC8737FA5E0
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=F54F3F02AE005D70860F3BC8737FA5E0
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T142049.200.txt
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=B1668CD4F6FB1A20A5B8427888CEF3DD
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=3A9248E72540E7398BA65B014E90EDD9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=3A9248E72540E7398BA65B014E90EDD9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T141930.200.txt
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=3A9248E72540E7398BA65B014E90EDD9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T141605.200.txt
+
+###
+
+GET http://localhost:8080/user
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=3A9248E72540E7398BA65B014E90EDD9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-22T141551.200.json
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=3A9248E72540E7398BA65B014E90EDD9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0CD44AA85183308C9C5AB1AB78C1DBEB
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0CD44AA85183308C9C5AB1AB78C1DBEB
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T140006.200.txt
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=0CD44AA85183308C9C5AB1AB78C1DBEB
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=B24016B2BA75F2F8385325C258071164
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=B24016B2BA75F2F8385325C258071164
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=AACACEC277FEBAF949F46EB38F7C7DB9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=AACACEC277FEBAF949F46EB38F7C7DB9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T135625.200.txt
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=FBBB12C15E8CE725525A4E9BD6EFC3AC
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T135528.200.txt
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=E1C02255788E1F4CBD3345A1062F0AC2
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=E1C02255788E1F4CBD3345A1062F0AC2
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=CD53A440FCADBE7E447E3BFCA5B0D63E
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=CD53A440FCADBE7E447E3BFCA5B0D63E
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T134937.200.txt
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=409ACC39B9D3DD3987566549CE52D24D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=409ACC39B9D3DD3987566549CE52D24D
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T134748.200.txt
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=071014F1E07A3D9EE21B5C9A00960C0A
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=071014F1E07A3D9EE21B5C9A00960C0A
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T134655.200.txt
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+Content-Length: 55
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=59905B1BF35E5FF8A7954B7D1A6CFEE3
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+}
+
+###
+
+GET http://localhost:8080/user
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=59905B1BF35E5FF8A7954B7D1A6CFEE3
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-22T134429.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=59905B1BF35E5FF8A7954B7D1A6CFEE3
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T134423.200.txt
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=59905B1BF35E5FF8A7954B7D1A6CFEE3
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T134356.200.txt
+
+###
+
+GET http://localhost:8080/user
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=59905B1BF35E5FF8A7954B7D1A6CFEE3
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-22T134230.200.json
+
+###
+
+GET http://localhost:8080/user
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=59905B1BF35E5FF8A7954B7D1A6CFEE3
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-22T133939.200.json
+
+###
+
+GET http://localhost:8080/user/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=4315194B30813A173807B3ED98E56E4E
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=4315194B30813A173807B3ED98E56E4E
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+<> 2023-10-22T133927.200.txt
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=601F0A122B5510D291C66F770B587AC5
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=7249F9AEA17EF857A41D661D847A5E43
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=7249F9AEA17EF857A41D661D847A5E43
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789"
+
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 57
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=7249F9AEA17EF857A41D661D847A5E43
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789",
+
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 57
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=7249F9AEA17EF857A41D661D847A5E43
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789",
+
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 57
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=FDE9AC4D174E8FEC36A870193906F1D0
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789",
+
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 57
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "TestUser",
+  "password": "123456789",
+
+}
+
+###
+
 POST http://localhost:8080/user
 Content-Type: application/json
 Content-Length: 74
@@ -12,721 +780,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-10-21T114320.200.json
-
-###
-
-GET http://localhost:8080/category/2/products
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T114228.200.json
-
-###
-
-POST http://localhost:8080/product/2
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T114221.200.txt
-
-###
-
-GET http://localhost:8080/category/2/products
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T114212.200.json
-
-###
-
-POST http://localhost:8080/category
-Content-Type: application/json
-Content-Length: 38
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 1,
-  "name": "test2"
-
-}
-
-<> 2023-10-21T114202.200.json
-
-###
-
-GET http://localhost:8080/category/1/products
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T114149.200.json
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T114139.200.json
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T114134.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T114133-1.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T114133.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T114132.200.txt
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T114124.200.json
-
-###
-
-PUT http://localhost:8080/category/1
-Content-Type: application/json
-Content-Length: 49
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "neuer cooler Name",
-  "active": 1
-
-}
-
-<> 2023-10-21T114121.200.txt
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T114057.200.json
-
-###
-
-GET http://localhost:8080/category/1/products
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T114053.200.json
-
-###
-
-PUT http://localhost:8080/category/1
-Content-Type: application/json
-Content-Length: 34
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "name": "neuer cooler Name"
-
-}
-
-<> 2023-10-21T114049.200.txt
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T114047.200.json
-
-###
-
-POST http://localhost:8080/category
-Content-Type: application/json
-Content-Length: 38
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 1,
-  "name": "test1"
-
-}
-
-<> 2023-10-21T114044.200.json
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113839.200.json
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113834.200.txt
-
-###
-
-POST http://localhost:8080/category
-Content-Type: application/json
-Content-Length: 38
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 1,
-  "name": "test2"
-
-}
-
-<> 2023-10-21T113830.200.json
-
-###
-
-GET http://localhost:8080/product/3
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113347.200.json
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113334.200.json
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113321.200.json
-
-###
-
-POST http://localhost:8080/category
-Content-Type: application/json
-Content-Length: 38
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 1,
-  "name": "test2"
-
-}
-
-<> 2023-10-21T113314.200.json
-
-###
-
-POST http://localhost:8080/category
-Content-Type: application/json
-Content-Length: 38
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 1,
-  "name": "test2"
-
-}
-
-<> 2023-10-21T113312.200.json
-
-###
-
-POST http://localhost:8080/category
-Content-Type: application/json
-Content-Length: 38
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 1,
-  "name": "test2"
-
-}
-
-<> 2023-10-21T113303.200.json
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113300.200.txt
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113254.200.json
-
-###
-
-GET http://localhost:8080/category/1/products
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113245.200.json
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113213.200.json
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113207.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113155.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113144.200.txt
-
-###
-
-GET http://localhost:8080/category/1/products
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113140.200.json
-
-###
-
-GET http://localhost:8080/product
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113134.200.json
-
-###
-
-GET http://localhost:8080/product
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T113127.200.json
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113125.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113124.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113123.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113121.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113120.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113117.200.txt
-
-###
-
-POST http://localhost:8080/product/1
-Content-Type: application/json
-Content-Length: 146
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "active": 1,
-  "name": "test product 2 posted",
-  "stock": 10,
-  "sku": 55,
-  "price": 99999999999,
-  "description": "this is a new product"
-}
-
-<> 2023-10-21T113114.200.txt
-
-###
-
-GET http://localhost:8080/category
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T112929.200.json
-
-###
-
-GET http://localhost:8080/category/1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T112924.200.json
-
-###
-
-POST http://localhost:8080/category
-Content-Type: application/json
-Content-Length: 38
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 1,
-  "name": "test2"
-
-}
-
-<> 2023-10-21T112922.200.json
-
-###
-
-POST http://localhost:8080/category
-Content-Type: application/json
-Content-Length: 38
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-
-  "active": 1,
-  "name": "test1"
-
-}
-
-<> 2023-10-21T112921.200.json
-
-###
-
-GET http://localhost:8080/category/1
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T112847.200.json
-
-###
-
-GET http://localhost:8080/category/1/products
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T112828.200.json
 
 ###
 

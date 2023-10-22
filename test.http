@@ -42,8 +42,8 @@ Content-Type: application/json
 
 {
   "username": "TestUser",
-  "password": "123456789",
-  "powerlevel": 1
+  "password": "123456789"
+
 }
 ###
 
@@ -105,4 +105,14 @@ Content-Type: application/json
   "name": "neuer cooler Name",
   "active": 1
 
+}
+
+###
+
+POST localhost:8080/user/login
+Content-Type: application/json
+
+{
+  "username": "TestUser",
+  "password": "123456789"
 }

@@ -21,17 +21,11 @@ public class AuthService {
     private final BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
 
     public String getJwt(UserDto userDto) {
-        User user = userRepository.findByUserName(userDto.getUsername())
+        User user = userRepository.findByUsername(userDto.getUsername())
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-
         if (!bCryptPasswordEncoder.matches(userDto.getPassword(), user.getPassword())) {
-            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
+            System.out.println("User not Found");
         }
-
         return jwtService.createJwt(user.getUsername());
     }
-
-
-
-
 }
