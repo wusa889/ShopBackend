@@ -5,6 +5,8 @@ spring:
     password:
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
-    generate-ddl: true
     hibernate:
       ddl-auto: create-drop
+    show-sql: false
+
+

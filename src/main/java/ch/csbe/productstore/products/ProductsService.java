@@ -41,7 +41,7 @@ public class ProductsService {
 
     }
 
-    public Products updateProduct(long id, Products product){
+    public String updateProduct(long id, Products product){
         Products existingProduct = productsRepository.findById(id).orElse(null);
         if (existingProduct != null) {
             existingProduct.setDescription(product.getDescription());
@@ -50,7 +50,8 @@ public class ProductsService {
             existingProduct.setPrice(product.getPrice());
             existingProduct.setSku(product.getSku());
             existingProduct.setStock(existingProduct.getStock());
-            return productsRepository.save(existingProduct);
+            productsRepository.save(existingProduct);
+            return(existingProduct.getName() + " was updated");
         }
         else {
             return null;

@@ -25,6 +25,9 @@ public class AuthConfig {
                     //TODO Authorisation auf die einzelnen Endpoints setzen wie in LB verlangt.
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/user").permitAll();
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/user/login").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/product").hasAuthority("admin");
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/product/*").hasAnyAuthority("admin","user");
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/category").hasAuthority("admin");
                 })
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
