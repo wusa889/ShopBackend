@@ -9,43 +9,48 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
 public class UserController {
     @Autowired
     private UserService userService;
 
     @Autowired
     private AuthService authService;
-    @GetMapping()
+    @GetMapping("/user")
     public List<User> getAllUsers(){
         return userService.getAllUsers();
     }
-    @GetMapping("/{id}")
+    @GetMapping("/user/{id}")
     public User getUserById(@PathVariable long id){
         return userService.getUserById(id);
     }
 
-    @PostMapping()
+    @PostMapping("/user")
     public String createUser(@RequestBody UserDto user){
         userService.createUser(user);
         return "user Created";
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/user/{id}")
     public User updateUser(@PathVariable long id, @RequestBody User user){
         return userService.updateUser(id, user);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/user/{id}")
     public User deleteUser(@PathVariable long id){
         return userService.deleteUser(id);
     }
 
-    @PostMapping("/login")
+    @PostMapping("/user/login")
     public ResponseEntity<String> login(@RequestBody UserDto userDto) {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(authService.getJwt(userDto));
+    }
+
+    @PutMapping("/makeadmin/{id}")
+    public String makeAdmin(@PathVariable long id, @RequestBody User user){
+        userService.makeUserAdmin(id, user);
+        return "user is made admin";
     }
 
 }

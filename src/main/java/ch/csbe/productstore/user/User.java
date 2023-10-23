@@ -45,7 +45,7 @@ public class User {
         return admin;
     }
 
-    public void setAdmin(boolean powerLevel) {
+    public void setAdmin(boolean admin) {
         this.admin = admin;
     }
 

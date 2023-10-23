@@ -23,6 +23,7 @@ public class AuthConfig {
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .authorizeHttpRequests(authorizationManagerRequestMatcherRegistry -> {
                     //TODO Authorisation auf die einzelnen Endpoints setzen wie in LB verlangt.
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/makeadmin/*").hasAuthority("admin");
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/user").permitAll();
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/user/login").permitAll();
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/product").hasAuthority("admin");

@@ -35,12 +35,24 @@ public class UserService {
         if (existingUser != null) {
             existingUser.setUsername(user.getUsername());
             existingUser.setPassword(user.getPassword());
-            existingUser.setAdmin(user.getAdmin());
             return userRepository.save(existingUser);
         } else {
             return null;
         }
     }
+
+    public String makeUserAdmin(long id, User user) {
+        User existingUser = userRepository.findById(id).orElse(null);
+        if (existingUser != null) {
+            existingUser.setAdmin(user.getAdmin());
+            userRepository.save(existingUser);
+           return "User is made Admin";
+        }
+        else {
+            return null;
+        }
+    }
+
 
     public User deleteUser(long id){
         userRepository.deleteById(id);

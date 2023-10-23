@@ -16,7 +16,7 @@ POST localhost:8080/user
 Content-Type: application/json
 
 {
-  "username": "user",
+  "username": "user2",
   "password": "123456789"
 
 }
@@ -33,18 +33,27 @@ Content-Type: application/json
 
 ###
 
+PUT localhost:8080/makeadmin/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwNTMyNDcsImV4cCI6MjkzNDIzNjAxMTUxOTI5Niwic3ViIjoiYWRtaW4ifQ.UHvvhTkdEKBCU3vBhSOyEPl0-RHb0xR5Du8jxtEq8rY
+
+{
+  "admin": true
+}
+###
+
 POST localhost:8080/user/login
 Content-Type: application/json
 
 {
-  "username": "user",
+  "username": "user2",
   "password": "123456789"
 }
 ###
 
 POST localhost:8080/category
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwNDg1NTcsImV4cCI6MjkzNDIyNzkwNzQ3OTIzMiwic3ViIjoiYWRtaW4ifQ.HwvcmMy_RgG1Mhsix9GC5WDCMJ-BP1h41Dcf5chMl0Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwNTE0OTUsImV4cCI6MjkzNDIzMjk4NDAyMzU1Miwic3ViIjoiYWRtaW4ifQ.ql83isURIf-GB3gKw5K5irLl3KRWTZ-UlIYn-rdblv8
 
 {
 
@@ -57,7 +66,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwN
 
 POST localhost:8080/product/1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwNDg1NTcsImV4cCI6MjkzNDIyNzkwNzQ3OTIzMiwic3ViIjoiYWRtaW4ifQ.HwvcmMy_RgG1Mhsix9GC5WDCMJ-BP1h41Dcf5chMl0Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwNTE0OTUsImV4cCI6MjkzNDIzMjk4NDAyMzU1Miwic3ViIjoiYWRtaW4ifQ.ql83isURIf-GB3gKw5K5irLl3KRWTZ-UlIYn-rdblv8
 
 {
   "active": 1,
@@ -111,10 +120,9 @@ PUT localhost:8080/user/1
 Content-Type: application/json
 
 {
-
   "username": "changedUser",
   "password": "aqbcdefg",
-  "powerlevel": 5
+  "admin": true
 }
 
 ###
