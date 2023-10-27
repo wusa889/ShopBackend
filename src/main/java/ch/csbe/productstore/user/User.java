@@ -2,21 +2,29 @@ package ch.csbe.productstore.user;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a User in the Database.
+ */
 @Entity
 public class User {
-    @Id
+    @Id // Specifies the primary key of an entity.
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // Provides specification of generation strategies for primary keys.
     private Long id;
 
+    // Username of User
     @Column(columnDefinition = "varchar(100)")
     private String username;
 
+    // Password of USer
     @Column(columnDefinition = "varchar(100)")
     private String password;
 
+    // Represents Admin status
     @Column
     private boolean admin;
 
+    // Getters and Setters
     public void setId(Long id) {
         this.id = id;
     }
@@ -49,7 +57,7 @@ public class User {
         this.admin = admin;
     }
 
-    public boolean isAdmin(){
+    public boolean isAdmin() {
         return admin;
     }
 }

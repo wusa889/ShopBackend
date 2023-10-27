@@ -5,22 +5,31 @@ import jakarta.persistence.*;
 
 import java.util.List;
 
-
+/**
+ * Represents a category in the Database.
+ * Each category can have multiple products associated with it.
+ */
 @Entity
 public class Categories {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // Provides specification of generation strategies for primary keys.
     private Long id;
 
+    // Represents Active Status
     @Column(columnDefinition = "tinyint")
     private int active;
 
+    // Name of the category
     @Column(columnDefinition = "varchar(255)")
     private String name;
 
+    // List of products associated with this category
     @OneToMany(mappedBy = "category")
     private List<Products> productsRepository;
+
+    // Getters and Setters
 
     public int getActive() {
         return active;
@@ -42,17 +51,16 @@ public class Categories {
         return productsRepository;
     }
 
+    // Set the list of products associated with this category
     public void setProductsRepositories(List<Products> products) {
         this.productsRepository = productsRepository;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public Long getId() {
         return id;
     }
 
-
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

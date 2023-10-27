@@ -1,19 +1,30 @@
 package ch.csbe.productstore.products;
 
+/**
+ * Data Transfer Object (DTO) representing a product.
+ * Used to transfer data between the application layers without exposing the entire domain model.
+ */
 public class ProductsDto {
 
+    // Unique identifier for the category
     private long id;
 
+    // Name of the product
     private String name;
 
+    // image of Product
     private String image;
 
+    // Description of product
     private String description;
 
+    // Price of product
     private float price;
 
+    // Stock of product
     private int stock;
 
+    // Getters and Setters
     public long getId() {
         return id;
     }

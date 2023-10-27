@@ -3,36 +3,47 @@ package ch.csbe.productstore.products;
 import ch.csbe.productstore.categories.Categories;
 import jakarta.persistence.*;
 
+/**
+ * Represents a Product in the Database.
+ */
 @Entity
 public class Products {
 
-    @Id
+    @Id  // Specifies the primary key of an entity.
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // Provides specification of generation strategies for primary keys.
     private Long id;
 
+    // Field for SKU
     @Column(columnDefinition = "varchar(100)")
     private String sku;
 
+    // Field to represent active status
     @Column(columnDefinition = "tinyint")
     private int active;
 
+    // Name of Product
     @Column(columnDefinition = "varchar(255)")
     private String name;
 
+    // image in string form of Product
     @Column(columnDefinition = "varchar(1000)")
     private String image;
 
+    // Definition of Product
     @Column(columnDefinition = "mediumtext")
     private String description;
 
+    // price of Product
     @Column(columnDefinition = "float")
     private float price;
 
+    // Stock of Product
     @Column(columnDefinition = "int")
     private int stock;
 
     @ManyToOne()
-    private Categories category;
+    private Categories category;  // A product belongs to one category.
 
     public Products() {
         //default Constructor

@@ -6,21 +6,18 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
+/**
+ * Service class responsible for logic related to User.
+ */
 @Service
 public class UserService {
 
+    // Creating instance of UserRepository
     @Autowired
     private UserRepository userRepository;
 
+    // Creating instance of BCryptPasswordEncoder
     private final BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-
-    public List<User> getAllUsers() {
-        return userRepository.findAll();
-    }
-
-    public User getUserById(long id) {
-        return userRepository.findById(id).orElse(null);
-    }
 
     public void createUser(UserDto user) {
         User newUser = new User();
@@ -30,33 +27,16 @@ public class UserService {
 
     }
 
-    public User updateUser(long id, User user) {
-        User existingUser = userRepository.findById(id).orElse(null);
-        if (existingUser != null) {
-            existingUser.setUsername(user.getUsername());
-            existingUser.setPassword(user.getPassword());
-            return userRepository.save(existingUser);
-        } else {
-            return null;
-        }
-    }
-
     public String makeUserAdmin(long id, User user) {
         User existingUser = userRepository.findById(id).orElse(null);
         if (existingUser != null) {
             existingUser.setAdmin(user.getAdmin());
             userRepository.save(existingUser);
-           return "User is made Admin";
-        }
-        else {
+            return "User is made Admin";
+        } else {
             return null;
         }
     }
-
-
-    public User deleteUser(long id){
-        userRepository.deleteById(id);
-        return null;
-    }
 }
+
 

@@ -19,22 +19,44 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Filter responsible for intercepting requests and extracting JWT tokens from the 'Authorization' header.
+ * It then validates and sets the authentication in the security context.
+ */
 @Component
 public class JwtFilter extends OncePerRequestFilter {
 
+    // Logger for this class.
     private static final Logger logger = LoggerFactory.getLogger(JwtFilter.class);
 
+    // creating JwtService instance
     @Autowired
     private JwtService jwtService;
 
+    // creating UserRepository instance
     @Autowired
     private UserRepository userRepository;
 
+    /**
+     * Determine if a request should not be filtered.
+     *
+     * @param request The incoming request.
+     * @return true if the request URI starts with "/user", otherwise false.
+     */
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
         return request.getRequestURI().startsWith("/user");
     }
 
+    /**
+     * Process each request to check for a valid JWT, extracts the username, and sets the authentication.
+     *
+     * @param request     The incoming request.
+     * @param response    The outgoing response.
+     * @param filterChain The filter chain.
+     * @throws ServletException In case of servlet errors.
+     * @throws IOException      In case of I/O errors.
+     */
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
@@ -42,15 +64,19 @@ public class JwtFilter extends OncePerRequestFilter {
 
         try {
             if (authorization != null && authorization.startsWith("Bearer ")) {
+                // Extract JWT token from header.
                 String jwt = authorization.substring("Bearer ".length());
                 String username = jwtService.getUserName(jwt);
 
                 Optional<User> user = userRepository.findByUsername(username);
 
+                // Check if the user is present in the repository.
                 if (user.isPresent()) {
+                    // Grant authorities based on user role (admin/user).
                     List<GrantedAuthority> authorities = List.of(() -> user.get().isAdmin() ? "admin" : "user");
                     UsernamePasswordAuthenticationToken authentication =
                             new UsernamePasswordAuthenticationToken(username, null, authorities);
+                    // Set authentication in the security context.
                     SecurityContextHolder.getContext().setAuthentication(authentication);
                 } else {
                     logger.error("User not found for the provided token");
@@ -66,6 +92,7 @@ public class JwtFilter extends OncePerRequestFilter {
             logger.error("Failed to authenticate user", e);
         }
 
+        // Continue the filter chain.
         filterChain.doFilter(request, response);
     }
 }

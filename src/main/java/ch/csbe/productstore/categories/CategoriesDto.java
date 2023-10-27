@@ -4,15 +4,25 @@ import ch.csbe.productstore.products.ProductsDto;
 
 import java.util.List;
 
+/**
+ * Data Transfer Object (DTO) representing a product category.
+ * Used to transfer data between the application layers without exposing the entire domain model.
+ */
 public class CategoriesDto {
+
+    // Unique identifier for the category
     private long id;
 
+    // Name of the category
     private String name;
 
+    // List of products associated with the category
     private List<ProductsDto> products;
 
+    // Status indicator for the category (e.g., active/inactive)
     private int active;
 
+    // Getters and Setters
     public long getId() {
         return id;
     }
