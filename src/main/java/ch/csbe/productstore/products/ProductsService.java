@@ -31,7 +31,7 @@ public class ProductsService {
     public String createProduct(Products product, long id){
         Categories category = categoriesRepository.findById(id).orElse(null);
         if (category != null){
-            product.setCategoriesRepository(category);
+            product.setCategory(category);
             productsRepository.save(product);
             return "product created";
         }
