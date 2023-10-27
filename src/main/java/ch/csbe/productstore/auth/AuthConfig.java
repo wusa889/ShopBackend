@@ -40,8 +40,8 @@ public class AuthConfig {
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.PUT,"/category/*").hasAuthority("admin");
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.DELETE,"/category/*").hasAuthority("admin");
                 })
-                .httpBasic(AbstractHttpConfigurer::disable) // Disabling basic auth
-                .csrf(AbstractHttpConfigurer::disable) // Disabling CSRF as per your existing configuration
+                .httpBasic(AbstractHttpConfigurer::disable)
+                .csrf(AbstractHttpConfigurer::disable)
                 .build();
     }
 

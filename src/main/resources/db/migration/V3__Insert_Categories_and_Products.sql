@@ -1,4 +1,3 @@
--- Annahme: Es gibt bereits zwei Kategorien mit IDs 1 und 2
 
 -- Einfügen von zwei Produkten, die der ersten Kategorie angehören
 INSERT INTO products (sku, active, name, image, description, price, stock,category_id) VALUES ('SKU001', 1, 'Product1', 'image1.jpg', 'Description of Product1', 100.0, 10, 1);

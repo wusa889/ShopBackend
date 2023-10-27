@@ -3,16 +3,15 @@ package ch.csbe.productstore.products;
 import ch.csbe.productstore.categories.Categories;
 import ch.csbe.productstore.categories.CategoriesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
+
 @Service
 public class ProductsService {
-
-    public String sayHelloWorld(){
-        return "Hello World";
-    }
 
     @Autowired
     private ProductsRepository productsRepository;
@@ -24,7 +23,8 @@ public class ProductsService {
     }
 
     public ProductsDto getProductById(long id) {
-        Products product = productsRepository.findById(id).orElse(null);
+        Products product = productsRepository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+
         return toProductsDto(product);
     }
 
