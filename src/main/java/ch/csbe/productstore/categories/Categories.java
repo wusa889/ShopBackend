@@ -1,7 +1,6 @@
 package ch.csbe.productstore.categories;
 
 import ch.csbe.productstore.products.Products;
-import ch.csbe.productstore.products.ProductsDto;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -11,7 +10,7 @@ import java.util.List;
 public class Categories {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(columnDefinition = "tinyint")
@@ -20,7 +19,7 @@ public class Categories {
     @Column(columnDefinition = "varchar(255)")
     private String name;
 
-    @OneToMany(mappedBy = "categoriesRepository")
+    @OneToMany(mappedBy = "category")
     private List<Products> productsRepository;
 
     public int getActive() {

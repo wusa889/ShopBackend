@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Products {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(columnDefinition = "varchar(100)")
@@ -32,7 +32,7 @@ public class Products {
     private int stock;
 
     @ManyToOne()
-    private Categories categoriesRepository;
+    private Categories category;
 
     public Products() {
         //default Constructor
@@ -104,12 +104,12 @@ public class Products {
         this.stock = stock;
     }
 
-    public Categories getCategoriesRepository() {
-        return categoriesRepository;
+    public Categories getCategory() {
+        return category;
     }
 
-    public void setCategoriesRepository(Categories categoriesRepository) {
-        this.categoriesRepository = categoriesRepository;
+    public void setCategory(Categories categoriesRepository) {
+        this.category = categoriesRepository;
     }
 
     public void setId(Long id) {
