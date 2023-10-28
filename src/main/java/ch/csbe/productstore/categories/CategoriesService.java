@@ -3,6 +3,7 @@ package ch.csbe.productstore.categories;
 import ch.csbe.productstore.products.Products;
 import ch.csbe.productstore.products.ProductsDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 /**
  * Service class responsible for logic related to Categories.
  */
+@RepositoryRestResource(exported = false)
 @Service
 public class CategoriesService {
 

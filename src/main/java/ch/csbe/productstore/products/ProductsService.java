@@ -3,6 +3,7 @@ package ch.csbe.productstore.products;
 import ch.csbe.productstore.categories.Categories;
 import ch.csbe.productstore.categories.CategoriesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -12,6 +13,7 @@ import java.util.List;
 /**
  * Service class responsible for logic related to products.
  */
+@RepositoryRestResource(exported = false)
 @Service
 public class ProductsService {
 

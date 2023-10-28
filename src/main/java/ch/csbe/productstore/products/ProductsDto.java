@@ -1,9 +1,12 @@
 package ch.csbe.productstore.products;
 
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
 /**
  * Data Transfer Object (DTO) representing a product.
  * Used to transfer data between the application layers without exposing the entire domain model.
  */
+@RepositoryRestResource(exported = false)
 public class ProductsDto {
 
     // Unique identifier for the category

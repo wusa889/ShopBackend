@@ -3,13 +3,14 @@ package ch.csbe.productstore.auth;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-
+@RepositoryRestResource(exported = false)
 /**
  * Configuration class responsible for setting up authentication and authorization rules.
  */
@@ -41,6 +42,15 @@ public class AuthConfig {
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.GET, "/category/*").permitAll();
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.GET, "/category").permitAll();
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.GET, "/category/*/products").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("swagger-ui/*").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/swagger-ui/index.html").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/swagger-ui/index.html").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/swagger-ui/*").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/swagger-ui/*").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/v3/api-docs").permitAll();
+                    authorizationManagerRequestMatcherRegistry.requestMatchers("/v3/api-docs/swagger-config").permitAll();
+
+
 
                     // Endpoints requiring admin authority
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/makeadmin/*").hasAuthority("admin");

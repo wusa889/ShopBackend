@@ -2,6 +2,7 @@ package ch.csbe.productstore.categories;
 
 import ch.csbe.productstore.products.Products;
 import ch.csbe.productstore.products.ProductsDto;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * Provides endpoints to manage categories and to fetch products associated with a specific category.
  */
 @RestController
+@Tag(name = "CategoriesController")
 @RequestMapping("/category")
 public class CategoriesController {
 

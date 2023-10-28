@@ -12,3 +12,5 @@ spring:
     url: jdbc:mariadb://localhost:3307/product-manager
     user: root
     password:
+  springdoc:
+    default-produces-media-type: application/json

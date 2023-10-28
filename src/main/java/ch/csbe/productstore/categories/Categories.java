@@ -2,9 +2,10 @@ package ch.csbe.productstore.categories;
 
 import ch.csbe.productstore.products.Products;
 import jakarta.persistence.*;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
-
+@RepositoryRestResource(exported = false)
 /**
  * Represents a category in the Database.
  * Each category can have multiple products associated with it.

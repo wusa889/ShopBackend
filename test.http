@@ -170,3 +170,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwN
 
 DELETE localhost:8080/category/2
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwNTY2MTksImV4cCI6MjkzNDI0MTgzODUzNTc0NCwic3ViIjoiYWRtaW4ifQ.suqBCLb1vXqRSM8-HDLoC_gBg98Dqt8Q2PdzQqJ3vy0
+
+###
+GET http://localhost:8080/swagger-ui/index.html

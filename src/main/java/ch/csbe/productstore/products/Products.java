@@ -2,10 +2,12 @@ package ch.csbe.productstore.products;
 
 import ch.csbe.productstore.categories.Categories;
 import jakarta.persistence.*;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
  * Represents a Product in the Database.
  */
+@RepositoryRestResource(exported = false)
 @Entity
 public class Products {
 

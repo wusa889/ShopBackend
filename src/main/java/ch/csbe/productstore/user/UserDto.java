@@ -1,11 +1,13 @@
 package ch.csbe.productstore.user;
 
 import jakarta.validation.constraints.NotBlank;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
  * Data Transfer Object (DTO) representing a User.
  * Used to transfer data between the application layers without exposing the entire domain model.
  */
+@RepositoryRestResource(exported = false)
 public class UserDto {
 
     // Username of User cant be null

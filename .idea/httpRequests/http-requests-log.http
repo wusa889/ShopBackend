@@ -1,3 +1,13 @@
+GET http://localhost:8080/swagger-ui/index.html
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=9F519E5CA62CCD3B4856EC5AF36A1609
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-28T175443.200.html
+
+###
+
 DELETE http://localhost:8080/product/4
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTg0MTY3NjcsImV4cCI6MjkzNDg2NDE3NTAxMjQxNiwic3ViIjoiYWRtaW4ifQ.Xo1Ja0ejuxriJpNZDoxVpiClt5Gr4QCniguZOGels_I
 Connection: Keep-Alive
@@ -701,24 +711,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-10-27T114800.200.txt
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-Content-Length: 53
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Cookie: JSESSIONID=7E42B314D6DBA27FD72B63B5D496D708
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "admin",
-  "password": "123456789"
-
-}
-
-<> 2023-10-27T114402.200.txt
 
 ###
 

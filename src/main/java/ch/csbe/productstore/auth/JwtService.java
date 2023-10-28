@@ -2,10 +2,11 @@ package ch.csbe.productstore.auth;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
-
+@RepositoryRestResource(exported = false)
 /**
  * Service class responsible for generating and parsing JWT tokens.
  */

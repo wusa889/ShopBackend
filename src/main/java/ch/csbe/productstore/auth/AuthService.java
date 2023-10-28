@@ -4,11 +4,12 @@ import ch.csbe.productstore.user.User;
 import ch.csbe.productstore.user.UserDto;
 import ch.csbe.productstore.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
+@RepositoryRestResource(exported = false)
 /**
  * Service class responsible for authentication-related functionalities, such as generating JWT tokens.
  */

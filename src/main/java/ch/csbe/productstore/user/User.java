@@ -1,10 +1,12 @@
 package ch.csbe.productstore.user;
 
 import jakarta.persistence.*;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
  * Represents a User in the Database.
  */
+@RepositoryRestResource(exported = false)
 @Entity
 public class User {
     @Id // Specifies the primary key of an entity.

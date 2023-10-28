@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -18,7 +19,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
-
+@RepositoryRestResource(exported = false)
 /**
  * Filter responsible for intercepting requests and extracting JWT tokens from the 'Authorization' header.
  * It then validates and sets the authentication in the security context.
@@ -45,7 +46,21 @@ public class JwtFilter extends OncePerRequestFilter {
      */
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
-        return request.getRequestURI().startsWith("/user");
+        System.out.println(request.getRequestURI());
+        boolean filter = false;
+        if (request.getRequestURI().startsWith("/swagger")){
+            filter = true;
+        }
+        if (request.getRequestURI().startsWith("/user")){
+            filter = true;
+        }
+        if (request.getRequestURI().startsWith("/v3")){
+            filter = true;
+        }
+        if (request.getRequestURI().startsWith("/favicon")) {
+            filter = true;
+        }
+        return filter;
     }
 
     /**
