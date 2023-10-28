@@ -1,4 +1,0 @@
--- Inserts 3 Products in the Product Table, 2 in Category 1 other in Category 2
-INSERT INTO products (sku, active, name, image, description, price, stock,category_id) VALUES ('SKU001', 1, 'Product1', 'image1.jpg', 'Description of Product1', 100.0, 10, 1);
-INSERT INTO products (sku, active, name, image, description, price, stock,category_id ) VALUES ('SKU002', 1, 'Product2', 'image2.jpg', 'Description of Product2', 120.0, 15, 1);
-INSERT INTO products (sku, active, name, image, description, price, stock,category_id ) VALUES ('SKU003', 1, 'Product3', 'image3.jpg', 'Description of Product3', 150.0, 5, 2);
