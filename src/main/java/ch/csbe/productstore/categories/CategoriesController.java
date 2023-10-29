@@ -15,7 +15,8 @@ import java.util.List;
  * Provides endpoints to manage categories and to fetch products associated with a specific category.
  */
 @RestController
-@Tag(name = "CategoriesController")
+@Tag(name = "CategoriesController",
+        description = "Controller für Kategorie Aktionen")
 @RequestMapping("/category")
 public class CategoriesController {
 

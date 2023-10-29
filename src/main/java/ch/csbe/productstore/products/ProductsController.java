@@ -13,7 +13,9 @@ import java.util.List;
  * Provides endpoints to manage products and to view products.
  */
 @RestController
-@Tag(name = "ProductsController")
+@Tag(name = "ProductsController",
+        description = "Controller für Produktaktionen")
+
 @RequestMapping("/product")
 public class ProductsController {
 
