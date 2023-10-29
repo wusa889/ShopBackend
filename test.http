@@ -11,6 +11,17 @@ Content-Type: application/json
 }
 
 ###
+POST localhost:8080/user
+Content-Type: application/json
+
+{
+  "username": "wannabeadmin",
+  "password": "123456789",
+  "admin": true
+
+}
+
+###
 
 POST localhost:8080/user
 Content-Type: application/json

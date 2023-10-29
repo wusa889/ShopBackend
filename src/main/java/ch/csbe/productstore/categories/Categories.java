@@ -2,6 +2,7 @@ package ch.csbe.productstore.categories;
 
 import ch.csbe.productstore.products.Products;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
@@ -19,10 +20,12 @@ public class Categories {
     private Long id;
 
     // Represents Active Status
+    @NotBlank
     @Column(columnDefinition = "tinyint")
     private int active;
 
     // Name of the category
+    @NotBlank
     @Column(columnDefinition = "varchar(255)")
     private String name;
 

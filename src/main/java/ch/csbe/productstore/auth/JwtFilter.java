@@ -57,9 +57,6 @@ public class JwtFilter extends OncePerRequestFilter {
         if (request.getRequestURI().startsWith("/v3")){
             filter = true;
         }
-        if (request.getRequestURI().startsWith("/favicon")) {
-            filter = true;
-        }
         return filter;
     }
 

@@ -1,6 +1,7 @@
 package ch.csbe.productstore.user;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
@@ -15,10 +16,12 @@ public class User {
     private Long id;
 
     // Username of User
+    @NotBlank
     @Column(columnDefinition = "varchar(100)")
     private String username;
 
-    // Password of USer
+    // Password of User
+    @NotBlank
     @Column(columnDefinition = "varchar(100)")
     private String password;
 

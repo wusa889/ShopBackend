@@ -1,6 +1,7 @@
 package ch.csbe.productstore.categories;
 
 import ch.csbe.productstore.products.ProductsDto;
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
@@ -15,12 +16,14 @@ public class CategoriesDto {
     private long id;
 
     // Name of the category
+    @NotBlank
     private String name;
 
     // List of products associated with the category
     private List<ProductsDto> products;
 
     // Status indicator for the category (e.g., active/inactive)
+    @NotBlank
     private int active;
 
     // Getters and Setters

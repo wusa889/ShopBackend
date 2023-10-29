@@ -2,6 +2,7 @@ package ch.csbe.productstore.products;
 
 import ch.csbe.productstore.categories.Categories;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
@@ -21,10 +22,12 @@ public class Products {
     private String sku;
 
     // Field to represent active status
+    @NotBlank
     @Column(columnDefinition = "tinyint")
     private int active;
 
     // Name of Product
+    @NotBlank
     @Column(columnDefinition = "varchar(255)")
     private String name;
 
@@ -37,10 +40,12 @@ public class Products {
     private String description;
 
     // price of Product
+    @NotBlank
     @Column(columnDefinition = "float")
     private float price;
 
     // Stock of Product
+    @NotBlank
     @Column(columnDefinition = "int")
     private int stock;
 

@@ -1,5 +1,6 @@
 package ch.csbe.productstore.products;
 
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
@@ -13,6 +14,7 @@ public class ProductsDto {
     private long id;
 
     // Name of the product
+    @NotBlank
     private String name;
 
     // image of Product
@@ -22,9 +24,11 @@ public class ProductsDto {
     private String description;
 
     // Price of product
+    @NotBlank
     private float price;
 
     // Stock of product
+    @NotBlank
     private int stock;
 
     // Getters and Setters

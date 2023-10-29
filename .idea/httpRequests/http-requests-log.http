@@ -1,3 +1,61 @@
+POST http://localhost:8080/user
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=9F519E5CA62CCD3B4856EC5AF36A1609
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "wannabeadmin",
+  "password": "123456789",
+  "admin": true
+
+}
+
+<> 2023-10-29T112343.200.txt
+
+###
+
+POST http://localhost:8080/product
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTg1NzM2MDIsImV4cCI6MTY5ODU3NTMzMCwic3ViIjoiYWRtaW4ifQ.BiZbIyP-N3Lr7nJOxMmibjU19UnAJ0Tz4ZEQK_EScbA
+Content-Length: 167
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=9F519E5CA62CCD3B4856EC5AF36A1609
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "active": 1,
+  "name": "Product without Categorie",
+  "stock": 10,
+  "sku": "55",
+  "price": 99999999999,
+  "description": "this is a Product, posted without ID"
+}
+
+<> 2023-10-29T110053.200.txt
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Cookie: JSESSIONID=9F519E5CA62CCD3B4856EC5AF36A1609
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "admin",
+  "password": "123456789"
+}
+
+<> 2023-10-29T110002.200.txt
+
+###
+
 GET http://localhost:8080/swagger-ui/index.html
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
@@ -659,58 +717,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-10-27T114856.200.txt
-
-###
-
-POST http://localhost:8080/user/login
-Content-Type: application/json
-Content-Length: 51
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Cookie: JSESSIONID=7E42B314D6DBA27FD72B63B5D496D708
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "user",
-  "password": "123456789"
-}
-
-<> 2023-10-27T114851.200.txt
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-Content-Length: 52
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Cookie: JSESSIONID=7E42B314D6DBA27FD72B63B5D496D708
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "user",
-  "password": "123456789"
-
-}
-
-<> 2023-10-27T114831.200.txt
-
-###
-
-POST http://localhost:8080/user/login
-Content-Type: application/json
-Content-Length: 52
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Cookie: JSESSIONID=7E42B314D6DBA27FD72B63B5D496D708
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "admin",
-  "password": "123456789"
-}
-
-<> 2023-10-27T114800.200.txt
 
 ###
 
