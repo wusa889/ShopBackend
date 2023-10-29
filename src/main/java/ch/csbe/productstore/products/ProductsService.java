@@ -63,6 +63,11 @@ public class ProductsService {
         }
     }
 
+    public String createProductWithoutId(Products product) {
+            productsRepository.save(product);
+            return "product created";
+    }
+
     /**
      * Updates an existing product in the database.
      *

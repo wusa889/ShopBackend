@@ -55,6 +55,7 @@ public class AuthConfig {
                     // Endpoints requiring admin authority
                     authorizationManagerRequestMatcherRegistry.requestMatchers("/makeadmin/*").hasAuthority("admin");
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.POST, "/product/*").hasAuthority("admin");
+                    authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.POST, "/product").hasAuthority("admin");
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.PUT, "/product/*").hasAuthority("admin");
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.DELETE, "/product/*").hasAuthority("admin");
                     authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.POST, "/category").hasAuthority("admin");
