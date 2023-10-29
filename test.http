@@ -173,3 +173,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTgwN
 
 ###
 GET http://localhost:8080/swagger-ui/index.html
+
+###
+
+POST localhost:8080/product
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCcmVjaHQiLCJpYXQiOjE2OTg1NzM2MDIsImV4cCI6MTY5ODU3NTMzMCwic3ViIjoiYWRtaW4ifQ.BiZbIyP-N3Lr7nJOxMmibjU19UnAJ0Tz4ZEQK_EScbA
+
+{
+  "active": 1,
+  "name": "Product without Categorie",
+  "stock": 10,
+  "sku": "55",
+  "price": 99999999999,
+  "description": "this is a Product, posted without ID"
+}
