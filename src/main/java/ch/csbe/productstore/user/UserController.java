@@ -47,7 +47,7 @@ public class UserController {
                 .body(authService.getJwt(userDto));
     }
 
-    @PutMapping("/makeadmin/{id}")
+    @PutMapping("/make-admin/{id}")
     @Operation(summary = "Erlaubt es einem Admin einen User zum Admin zu promoten",
             description = "Lässt einen Admin einen User zum Admin hochstufen")
     // Promotes a User to Admin status
